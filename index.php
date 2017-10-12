@@ -1,14 +1,10 @@
 <?php
 
-function pre()
+function pre($var)
 {
-    $vars = func_get_args();
-
-    foreach ($vars as $var) {
-        echo '<pre>';
-        print_r($var);
-        echo '</pre>';
-    }
+    echo '<pre>';
+    print_r($var);
+    echo '</pre>';
 }
 
 require_once 'DB.php';
